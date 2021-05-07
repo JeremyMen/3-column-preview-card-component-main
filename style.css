@@ -120,6 +120,7 @@ div.card:last-child {
 
 .attribution {
   color: black;
+  margin-top: 30px;
 }
 
 @media (max-width: 1024px) {
