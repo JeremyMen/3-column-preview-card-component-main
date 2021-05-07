@@ -1,0 +1,191 @@
+/* font-family: 'Big Shoulders Display', cursive;*/
+/*font-family: 'Lexend Deca', sans-serif; */
+
+html {
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 95%)
+}
+
+html, body, section {
+  height:100%;
+}
+
+/* COLORS */
+
+.bg-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.bg-cyan {
+  background-color: hsl(184, 100%, 22%)
+}
+
+.bg-dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.color-orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.color-cyan {
+  color: hsl(184, 100%, 22%)
+}
+
+.color-dark-cyan {
+  color: hsl(179, 100%, 13%)
+}
+
+/* REUSABLES */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+/* GENERALSS */
+
+.main-container {
+  height: 60%;
+}
+
+.cards-container {
+  width: 60%;
+}
+
+.card {
+  padding: 4%;
+}
+
+.card-body {
+  max-height: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 48px;
+}
+
+.card-description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 32px;
+}
+
+button {
+  height: 10%;
+  width: 60%;
+  background-color: hsla(0, 0%, 95%);
+  border-radius: 30px;
+  border-color: hsla(0, 0%, 95%);
+  border-style: solid;
+}
+
+button:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 95%);
+  cursor: pointer;
+}
+
+div.card:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+div.card:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.attribution {
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 20%;
+  }
+
+  div.card:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+  
+  div.card:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  button {
+    width: 30%;
+    height: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+
+  section {
+    height: auto;
+  }
+
+  .cards-container {
+    width: 90%;
+  }
+
+  .card {
+    padding: 12%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .card-description {
+    line-height: 24px;
+  }
+
+  button {
+    width: 50%;
+  }
+}
