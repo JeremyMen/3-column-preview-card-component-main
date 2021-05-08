@@ -5,7 +5,8 @@ html {
   color: white;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
-  color: hsl(0, 0%, 95%)
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
 }
 
 html, body, section {
@@ -90,7 +91,7 @@ h2 {
 
 .card-description {
   color: hsla(0, 0%, 100%, 0.75);
-  line-height: 32px;
+  line-height: 24px;
 }
 
 button {
